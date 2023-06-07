@@ -1,7 +1,6 @@
 import useThemeSwitcher from '../../hooks/useThemeSwitcher';
 import { FiArrowDownCircle } from 'react-icons/fi';
-import developerLight from '../../images/developer.svg';
-import developerDark from '../../images/developer-dark.svg';
+ 
 import { motion } from 'framer-motion';
 
 const AppBanner = () => {
@@ -25,7 +24,7 @@ const AppBanner = () => {
 					}}
 					className="font-general-semibold text-2xl lg:text-3xl xl:text-4xl text-center sm:text-left text-ternary-dark dark:text-primary-light uppercase"
 				>
-					Hi, Iam Stoman
+				FARID GANGBANG
 				</motion.h1>
 				<motion.p
 					initial={{ opacity: 0 }}
@@ -44,7 +43,7 @@ const AppBanner = () => {
 					animate={{ opacity: 1 }}
 					transition={{
 						ease: 'easeInOut',
-						duration: 0.9,
+						duration: 0.5,
 						delay: 0.3,
 					}}
 					className="flex justify-center sm:block"
@@ -68,12 +67,7 @@ const AppBanner = () => {
 				transition={{ ease: 'easeInOut', duration: 0.9, delay: 0.2 }}
 				className="w-full sm:w-2/3 text-right float-right mt-8 sm:mt-0"
 			>
-				<img
-					src={
-						activeTheme === 'dark' ? developerLight : developerDark
-					}
-					alt="Developer"
-				/>
+			 
 			</motion.div>
 		</motion.section>
 	);
