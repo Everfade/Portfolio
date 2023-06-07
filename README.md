@@ -1,54 +1,98 @@
-<img src="screenshot.png" alt="Gatsby Theme Portfolio Minimal Screenshot" width="700" />
+# React & TailwindCSS Portfolio - With Dark Mode
 
-<a href="https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal-theme" target="_blank">
-<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud" />
-</a>
+A simple portfolio starter theme built with React and Tailwind CSS. This is the React version of [vuejs-tailwindcss-portfolio](https://github.com/realstoman/vuejs-tailwindcss-portfolio).
 
-# Gatsby Starter Portfolio Minimal Theme
+![React-TailwindCSS-Portfolio](https://user-images.githubusercontent.com/16396664/146666086-28e88beb-c2f0-431f-adfb-2396d8f64c80.png)
 
-#### A Gatsby Starter Project to easily get started with the Portfolio Minimal Theme.
+## Demo URL
 
-Portfolio Minimal is a Gatsby Theme that let's you create outstanding one-page portfolios within minutes. This Gatsby Starter is a boilerplate project that has the theme pre-installed and pre-configured.
+[https://react-tailwindcss-portfolio.netlify.app](https://react-tailwindcss-portfolio.netlify.app)
 
-Just clone this Gatsby Starter, add the content. And that's it!
+## Other versions of this project
 
-[Live Demo on Gatsby Cloud](https://gatsbystarterportfoliominimalt.gatsbyjs.io/) · [Live Demo on Netlify](https://gatsby-starter-portfolio-minimal-theme.netlify.app/) · [Portfolio Minimal Theme on Github](https://github.com/konstantinmuenster/gatsby-theme-portfolio-minimal)
+-   Next.js Version: [https://github.com/realstoman/nextjs-tailwindcss-portfolio](https://github.com/realstoman/nextjs-tailwindcss-portfolio)
+-   Vue.js Version: [https://github.com/realstoman/vuejs-tailwindcss-portfolio](https://github.com/realstoman/vuejs-tailwindcss-portfolio)
+-   Nuxt.js Version: [https://github.com/realstoman/nuxtjs-tailwindcss-portfolio](https://github.com/realstoman/nuxtjs-tailwindcss-portfolio)
 
----
+## Features
 
-## Installation
+-   [React v18](https://reactjs.org) with [React Router v6](https://reactrouter.com)
+-   [Tailwind CSS v3](https://tailwindcss.com)
+-   Context API For State Management
+-   Custom Hooks
+-   Unit Testing
+-   Framer Motion transitions & animations
+-   Reusable components
+-   Dark mode
+-   Projects filter by category
+-   Projects filter by search
+-   Smooth scroll
+-   Counter
+-   Dynamic forms
+-   Back to top button
+-   Download file button
+-   Simple and responsive design
 
-1. Install the Gatsby CLI
+### To Contribute to this project, read the [Contribution Guidlines](https://github.com/realstoman/react-tailwindcss-portfolio/blob/main/CONTRIBUTING.md)
 
-   ```sh
-   npm install -g gatsby-cli
-   ```
+## Setup
 
-2. Create a new Gatsby site with the Portfolio Minimal Starter.
+1. Make sure you have Node JS installed. If you don't have it:
 
-   ```sh
-   gatsby new portfolio-minimal https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal-theme
-   ```
+-   [Download it from nodejs.org](https://nodejs.org)
+-   [Install it using NVM ](https://github.com/nvm-sh/nvm)
+-   If you're on Mac, Homebrew is a good option too:
 
-3. Once installed, you can begin developing your site.
+```
+brew install node
+```
 
-   ```sh
-   cd portfolio-minimal
-   gatsby develop
-   ```
+2. Clone the repo:
 
-4. By default, the Portfolio Minimal Starter has a `content` directory at the root of your Gatsby site. There, you can edit the theme settings as well as add content for your sections. To learn more about it, have a look at the [Readme of Portfolio Minimal](https://github.com/konstantinmuenster/gatsby-theme-portfolio-minimal/tree/main/gatsby-theme-portfolio-minimal#readme).
+```
+git clone https://github.com/realstoman/react-tailwindcss-portfolio.git
+```
 
----
+3. Open the project folder:
 
-## Issues?
+```
+cd react-tailwindcss-portfolio
+```
 
-If you find any bugs or have feature suggestions, create a new issue or pull request 🙏
+4. Install packages and dependencies:
 
-Thanks a lot for using this starter! 💪
+```
+yarn
+```
 
----
+4. NOTE: If you don't have yarn installed, you can install it globally using npm:
 
-<a href="https://www.buymeacoffee.com/kmuenster" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
+```
+npm install --global yarn
+```
 
-Konstantin Münster – [konstantin.digital](https://konstantin.digital)
+5. Start a local dev server at `http://localhost:3000`:
+
+```
+yarn start
+```
+
+6. ##### Run tests:
+
+```
+yarn test
+```
+
+## Notes
+
+-   Always run `yarn install` after pulling new changes
+-   I'll be constantly updating this repo as I'll be adding more sections to it, so please always check the projects section of this repo to see what tasks are under todo and in progress
+-   Coming Soon [I'll be doing a screencast](https://www.youtube.com/realstoman). Soon I'll be uploading a video to my YouTube channel where I'll be going through the process of creating this portoflio
+-   Illustrations from [unDraw](https://undraw.co) and [Freepik](https://freepik.com)
+-   Images from [Unsplash](https://unsplash.com)
+-   Feel free to use it as your own portfolio
+-   Contributions are welcome
+
+### License
+
+[MIT](https://github.com/realstoman/react-tailwindcss-portfolio/blob/main/LICENSE)
