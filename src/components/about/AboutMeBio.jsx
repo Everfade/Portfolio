@@ -8,7 +8,7 @@ const AboutMeBio = () => {
 	return (
 		<div className="block sm:flex sm:gap-10 mt-10 sm:mt-20   ">
 			<div className="   mb-7 sm:mb-0   ">
-				<img src={profileImage} className="    w-64 rounded-lg " alt="" />
+				<img src={profileImage} className="   w-60  rounded-lg " alt="" />
 			</div>
 
 			<div className="font-general-regular w-full sm:w-3/4 text-left">
