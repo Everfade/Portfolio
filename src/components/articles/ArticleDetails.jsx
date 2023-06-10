@@ -41,7 +41,7 @@ const ArticleDetails = ( ) => {
     </p>
 </div>
         <div className=" text-center mb-4">
-            <img className="rounded-lg w-94  mx-auto "  src={article.cover} alt="Article Cover"/>
+            <img className="rounded-lg w-94  mx-auto"  src={article.cover} alt="Article Cover"/>
         </div>
 
         <div className="mb-7 max-w-md mx-auto">

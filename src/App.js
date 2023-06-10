@@ -4,7 +4,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import ScrollToTop from './components/ScrollToTop';
 import AppFooter from './components/shared/AppFooter';
 import AppHeader from './components/shared/AppHeader';
-import './css/App.css';
+ 
+import './styles.css';
 import UseScrollToTop from './hooks/useScrollToTop';
  
 import ArticleDetails from './components/articles/ArticleDetails';
