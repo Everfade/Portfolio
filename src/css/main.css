@@ -30,8 +30,9 @@
 3. Use a more readable tab size.
 4. Use the user's configured `sans` font-family by default.
 */
-
+ 
 html {
+  height: 100% ;
   line-height: 1.5;
   /* 1 */
   -webkit-text-size-adjust: 100%;
@@ -50,6 +51,7 @@ html {
 
 body {
   margin: 0;
+  background-color:#252525;
   /* 1 */
   line-height: inherit;
   /* 2 */
@@ -1797,4 +1799,4 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 
 
-}
+ 
