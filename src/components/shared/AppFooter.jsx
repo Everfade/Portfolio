@@ -6,13 +6,9 @@ import {
 	FiYoutube,
 } from 'react-icons/fi';
 import AppFooterCopyright from './AppFooterCopyright';
+import profileImage from '../../images/profile.jpeg';
 
 const socialLinks = [
-	{
-		id: 1,
-		icon: <FiGlobe />,
-		url: 'https://www.stoman.me/',
-	},
 	{
 		id: 2,
 		icon: <FiGithub />,
@@ -28,22 +24,15 @@ const socialLinks = [
 		icon: <FiLinkedin />,
 		url: 'https://www.linkedin.com/in/realstoman',
 	},
-	{
-		id: 5,
-		icon: <FiYoutube />,
-		url: 'https://www.youtube.com/c/realstoman',
-	},
 ];
 
 const AppFooter = () => {
 	return (
-		<div className="container mx-auto">
-			<div className="pt-20 sm:pt-30 pb-8 mt-20 border-t-2 border-primary-light dark:border-secondary-dark">
+		<div className="container">
+			<div className="  mt-5  ">
+				<img src={profileImage} className="w-64 rounded-lg mb-10" alt="" />
 				{/* Footer social links */}
-				<div className="font-general-regular flex flex-col justify-center items-center mb-12 sm:mb-28">
-					<p className="text-3xl sm:text-4xl text-primary-dark dark:text-primary-light mb-5">
-						Follow me
-					</p>
+				<div className="font-general-regular flex flex-col justify-center items-center ">
 					<ul className="flex gap-4 sm:gap-8">
 						{socialLinks.map((link) => (
 							<a
@@ -59,8 +48,6 @@ const AppFooter = () => {
 						))}
 					</ul>
 				</div>
-
-				<AppFooterCopyright />
 			</div>
 		</div>
 	);
