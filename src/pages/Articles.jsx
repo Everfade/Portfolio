@@ -1,13 +1,14 @@
  
-import ProjectsGrid from '../components/projects/ProjectsGrid';
-import { ProjectsProvider } from '../context/ProjectsContext';
+import ArticleGrid from '../components/articles/ArticleGrid';
+import { ArticlesProvider } from '../context/ArticlesContext';
+ 
 const Articles = () => {
     return (
-		<ProjectsProvider>
+		<ArticlesProvider>
 			<div className="container mx-auto">
-				<ProjectsGrid />
+				<ArticleGrid />
 			</div>
-		</ProjectsProvider>
+		</ArticlesProvider>
 	);}
 
 export default Articles;
