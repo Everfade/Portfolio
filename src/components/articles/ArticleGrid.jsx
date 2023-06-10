@@ -7,7 +7,7 @@ import ArticlesFilter from '../../components/articles/ArticlesFilter'
  const ArticleGrid = () => {
 	const {
 		articles,
-				setArticle,
+			 
 				searchArticle,
 				setSearchArticle,
 				searchArticlesByTitle,

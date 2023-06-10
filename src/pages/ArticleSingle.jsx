@@ -20,6 +20,7 @@ const ArticleSingle = () => {
 			<SingleArticleProvider>
 				<ArticleHeader />
 				<ArticleGallery />
+			 	
 				<ArticleInfo />
 			 
 			</SingleArticleProvider>

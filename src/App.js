@@ -6,6 +6,8 @@ import AppFooter from './components/shared/AppFooter';
 import AppHeader from './components/shared/AppHeader';
 import './css/App.css';
 import UseScrollToTop from './hooks/useScrollToTop';
+ 
+import ArticleDetails from './components/articles/ArticleDetails';
 
 const About = lazy(() => import('./pages/AboutMe'));
 const Contact = lazy(() => import('./pages/Contact.jsx'));
@@ -23,14 +25,12 @@ function App() {
 					<AppHeader />
 					<Suspense fallback={""}>
 						<Routes>
-							<Route path="/" element={<Home />} />
-							<Route path="projects" element={<Projects />} />
+							<Route   path="/" element={<Home />} />
+							<Route  path="projects" element={<Projects />} />
 							<Route path="articles" element={<Articles />} />
-							<Route
-								path="projects/single-project"
-								element={<ProjectSingle />}
-							/>
-
+							<Route path="projects/single-project"
+								element={<ProjectSingle />}/>
+							<Route path="/articles/:title" element={<ArticleDetails/>} />
 							<Route path="about" element={<About />} />
 							<Route path="contact" element={<Contact />} />
 						</Routes>
