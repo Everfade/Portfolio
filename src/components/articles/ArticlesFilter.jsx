@@ -1,5 +1,9 @@
 const selectOptions = [
-	"artificial intelligence", "society", "automation", "ethics", "technology"
+	"artificial intelligence",
+	 "society",
+	  "automation",
+	  "ethics",
+	   "technology"
 ];
 
 const ArticlesFilter = ({ setSelectArticle}) => {

@@ -2,6 +2,8 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
 const ArticleSingle = ({ title, abstract, cover }) => {
+	const urlRegex = /\s/g;
+    const url_title = title.toLowerCase().replace(urlRegex, '-');
 	return (
 		<motion.div
 			initial={{ opacity: 0 }}
@@ -11,28 +13,36 @@ const ArticleSingle = ({ title, abstract, cover }) => {
 				duration: 0.7,
 				delay: 0.15,
 			}}
-		>
-			<Link to="/articles/single-article" aria-label="Single Article">
-				<div className="rounded-xl shadow-lg hover:shadow-xl cursor-pointer
+		>  <Link to={`/articles/${encodeURIComponent(url_title)}`}>
+		 
+				<div    className="rounded-xl shadow-lg hover:shadow-xl cursor-pointer
 				 mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark ">
-					<div className="containerGallery">
-						<img
-							src={cover}
-							className=" rounded-t-xl border-none"
-							alt="Single Article"
-						/>
-					</div>
-					<div className="text-center px-4 py-6">
+						<div className="text-center px-2 py-2">
 						<p className="font-general-medium text-lg md:text-xl text-ternary-dark dark:text-ternary-light mb-2">
 							{title}
 						</p>
-						<span className="text-lg text-ternary-dark dark:text-ternary-light">
-							{abstract}
-						</span>
+				 
+					</div>
+					<div className="  ">
+						<img
+							src={cover}
+							className="   rounded-lg  mx-auto"
+							alt="Single Article"
+						/>
+					</div>
+				
+					<div className="text-center px-2 py-2">
+						<p className="font-general-medium text-lg md:text-xl text-ternary-dark dark:text-ternary-light mb-2">
+							 
+						</p>
+				 
 					</div>
 				</div>
+				
 			</Link>
+	
 		</motion.div>
+
 	);
 };
 

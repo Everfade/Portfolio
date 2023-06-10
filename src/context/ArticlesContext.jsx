@@ -6,7 +6,7 @@ export const ArticlesContext = createContext();
 export const ArticlesProvider = (props)=>{
     const [ articles, setArticles] = useState(articleData);
 	const [searchArticle, setSearchArticle] = useState('');
-	const [selecthArticle, setSelectArticle] = useState('');
+	const [selectArticle, setSelectArticle] = useState('');
     return (
 		<ArticlesContext.Provider
 			value={{
@@ -14,6 +14,7 @@ export const ArticlesProvider = (props)=>{
 				setArticles,
 				searchArticle,
 				setSearchArticle,
+				selectArticle,
 				 
 			 
 				setSelectArticle,
