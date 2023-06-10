@@ -10,13 +10,9 @@ const AboutMeBio = () => {
 
 	return (
 		<div className="block sm:flex sm:gap-10 mt-10 sm:mt-20   ">
-			<div className="   mb-7 sm:mb-0   ">
-
-					<AppFooter />
-
+			<div className="mb-7 sm:mb-0">
+				<AppFooter />
 			</div>
-
-
 			<div>
 				<h3 className="font-general-bold text-xl mb-4 text-ternary-dark dark:text-ternary-light">
 					Education
@@ -45,7 +41,6 @@ const AboutMeBio = () => {
 					</div>
 				))}
 			</div>
-
 			<div >
 				<h3 className="font-general-bold text-xl mb-4 text-ternary-dark dark:text-ternary-light">
 					Skills
