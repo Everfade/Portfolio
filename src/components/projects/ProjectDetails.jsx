@@ -1,25 +1,64 @@
 import { useContext } from 'react';
+import React from 'react';
 import SingleProjectContext from '../../context/SingleProjectContext';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { useParams } from 'react-router-dom';
 import { Carousel,onChange,onClickItem,onClickThumb } from 'react-responsive-carousel';
 import Button from '../reusable/Button';
-const ProjectGallery = () => {
-	 
+import ProjectRelatedProjects from './ProjectRelatedProjects';
+import ProjectSingleHeader from './ProjectHeader';
+import { motion } from 'framer-motion';
+ 
+function convertToCamelCase(str) {
+	const words = str.split('-');
+	const camelCaseWords = words.map((word, index) => {
+	  if (index === 0) {
+		return word;
+	  }
+	  const capitalizedWord = word.charAt(0).toUpperCase() + word.slice(1);
+	  return capitalizedWord;
+	});
+	const camelCaseString = camelCaseWords.join('');
 
-	const { singleProjectData } = useContext(SingleProjectContext);
+	 
+	return camelCaseString;
+  }
+const ProjectDetails = () => {
+	let { title } = useParams();
+	 
+	const import_title=convertToCamelCase(title)
+	console.log(import_title)
+	const singleProjectData =   require("../../data/projects/"+import_title).singleProjectData;
+ 
+	//const project = singleProjectData.find(project => project.ProjectHeader.title.toLowerCase() === title);
+ 
 
 	return (
+		<motion.div
+		initial={{ opacity: 0 }}
+		animate={{ opacity: 1, delay: 1 }}
+		transition={{
+			ease: 'easeInOut',
+			duration: 0.6,
+			delay: 0.15,
+		}}
+		className="container mx-auto mt-5 sm:mt-10"
+	>
+	
 		<div>
+			<ProjectSingleHeader parentToChild={singleProjectData}></ProjectSingleHeader>	
 		<div className='flex flex-auto mt-10'>
-		<div className='max-w-md mr-14'>
+		<div className='max-w-md mr-14 ml-10 h-fit'>
 		<Carousel  width={"30rem"}  showArrows={true} onChange={onChange} onClickItem={onClickItem} onClickThumb={onClickThumb}>
 	 
 			{singleProjectData.ProjectImages.map((project) => {
+				console.log(project.img)
 				return (
 					<div className=" mb-10 sm:mb-0" key={project.id}>
-						<img
+						<img 
 							src={project.img}
-							className="rounded-xl cursor-pointer shadow-lg sm:shadow-none"
+							className="rounded-xl cursor-pointer 
+							shadow-lg sm:shadow-non  "
 							alt={project.title}
 							key={project.id}
 						/>
@@ -41,14 +80,14 @@ const ProjectGallery = () => {
 		   </div>
 		   <div className="w-full sm:w-2/3  mt-10 sm:mt-1      ">
 				<p className="font-general-regular text-primary-dark
-				 dark:text-primary-light text-2xl font-bold mb-7 text-center">
-					{singleProjectData.ProjectInfo.ProjectDetailsHeading}
+				 dark:text-primary-light text-4xl font-semi-bold mb-7 text-center">
+					Description
 				</p>
 				{singleProjectData.ProjectInfo.ProjectDetails.map((details) => {
 					return (
 						<p
 							key={details.id}
-							className="font-general-regular mb-5 text-lg text-ternary-dark dark:text-ternary-light"
+							className="font-general-regular mb-5 text-xl text-ternary-dark dark:text-ternary-light"
 						>
 							{details.details}
 						</p>
@@ -62,7 +101,14 @@ const ProjectGallery = () => {
 					bg-indigo-500 hover:bg-indigo-600 focus:ring-1 focus:ring-indigo-900 text-white
 					 text-lg sm:text-xl duration-30 max-w-sm mx-auto  cursor-pointer text-center">
 				 <Button  title="Checkout Github" />
-				 </div></div> );
+				 </div>
+				 
+				 
+				 </div> 	</motion.div>);
 };
 
-export default ProjectGallery;
+export default ProjectDetails;
+
+  
+ 
+  

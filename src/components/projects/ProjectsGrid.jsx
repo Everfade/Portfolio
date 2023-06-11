@@ -29,11 +29,12 @@ const ProjectsGrid = () => {
                         text-center text-secondary-dark
                         dark:text-ternary-light
                         text-md
-                        sm:text-xl
+                        sm:text-2xl
                         mb-3
                         "
 				>
-					Search projects by title or filter by category
+					< p>A small selection of coding projects over the years</p>
+					
 				</h3>
 				<div
 					className="

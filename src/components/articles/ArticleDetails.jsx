@@ -23,7 +23,7 @@ const ArticleDetails = ( ) => {
             </p>
         </div>
         <div className="mb-7 flex justify-center">
-    <p className="font-general-regular text-2xl text-ternary-dark dark:text-ternary-light mb-2">
+    <div className="font-general-regular text-2xl text-ternary-dark dark:text-ternary-light mb-2">
         <span className="flex align-content">
         <span className="font-general-regular mb-2 text-lg text-ternary-dark dark:text-ternary-light" >By&nbsp;&nbsp; </span>
             {article.authors.map((name, index) => {
@@ -38,18 +38,21 @@ const ArticleDetails = ( ) => {
             })}
               <span className="font-general-regular mb-2 text-lg text-ternary-dark dark:text-ternary-light" >&nbsp; &nbsp;- {article.year} </span>
         </span>
-    </p>
+    </div>
 </div>
         <div className=" text-center mb-4">
             <img className="rounded-lg w-94  mx-auto"  src={article.cover} alt="Article Cover"/>
         </div>
 
-        <div className="mb-7 max-w-md mx-auto">
-            <p className="font-general-regular text-4xl
-              text-ternary-dark dark:text-ternary-light mb-2">Abstract</p>
-            <p className="font-general-regular  text-secondary-dark dark:text-secondary-light mb-2">
-                {article.abstract}
-            </p>
+        <div className="mb-7 flex flex-col items-center justify-center ">
+            <div>   <p className="font-general-regular text-4xl
+              text-ternary-dark dark:text-ternary-light mb-2">Abstract</p></div>
+         
+             <div  className="w-full sm:w-2/3  mt-10 sm:mt-1  ">
+			 		<p className="font-general-regular mb-5 text-lg t text-ternary-dark dark:text-ternary-light">
+							{article.abstract}
+						</p>
+			</div>
         </div>
     
         <div className="">

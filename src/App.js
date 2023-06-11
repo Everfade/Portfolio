@@ -9,6 +9,7 @@ import './styles.css';
 import UseScrollToTop from './hooks/useScrollToTop';
  
 import ArticleDetails from './components/articles/ArticleDetails';
+import ProjectDetails from './components/projects/ProjectDetails';
 
 const About = lazy(() => import('./pages/AboutMe'));
 const Contact = lazy(() => import('./pages/Contact.jsx'));
@@ -29,9 +30,10 @@ function App() {
 							<Route   path="/" element={<Home />} />
 							<Route  path="projects" element={<Projects />} />
 							<Route path="articles" element={<Articles />} />
-							<Route path="projects/single-project"
-								element={<ProjectSingle />}/>
-							<Route path="/articles/:title" element={<ArticleDetails/>} />
+							<Route path="/projects/:title"
+								element={<ProjectDetails />}/>
+							<Route path="/articles/:title"
+								element={<ArticleDetails/>} />
 							<Route path="about" element={<About />} />
 							<Route path="contact" element={<Contact />} />
 						</Routes>

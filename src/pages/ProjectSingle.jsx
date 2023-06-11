@@ -5,6 +5,7 @@ import ProjectRelatedProjects from '../components/projects/ProjectRelatedProject
 import { SingleProjectProvider } from '../context/SingleProjectContext';
 import { motion } from 'framer-motion';
 
+
 const ProjectSingle = () => {
 	return (
 		<motion.div
@@ -23,7 +24,12 @@ const ProjectSingle = () => {
 				<ProjectInfo />
 				<ProjectRelatedProjects />
 			</SingleProjectProvider>
+
+
+    	 
+     
 		</motion.div>
+		
 	);
 };
 
