@@ -20,15 +20,14 @@ const url_title = title.toLowerCase().replace(urlRegex, '-');
 					<div className="">
 						<img
 							src={image}
-							className="object-cover w-80 h-80  rounded-t-xl border-none mx-auto py-5 hover:scale-105  ease-in duration-500  "
+							className="object-cover w-64 h-64  rounded-lg border-none mx-auto py-5 hover:scale-105  ease-in duration-500  "
 							alt="Single Project"
 						/>
 					</div>
 					<div  className="rounded-xl shadow-lg hover:shadow-xl cursor-pointer
-				 mb-10 sm:mb-0   bg-stone-900">
+				 mb-10 sm:mb-0   bg-custom-c">
 					<div className="text-center px-4 py-5">
-						<p className="font-general-medium text-lg md:text-xl
-						 text-ternary-dark dark:text-ternary-light mb-1">
+						<p className="font-general-medium text-lg md:text-xl text-ternary-dark dark:text-ternary-light mb-2">
 							{title}
 						</p>
 						<span className="text-lg text-ternary-dark dark:text-ternary-light">

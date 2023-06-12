@@ -1,9 +1,5 @@
 import {
 	FiGithub,
-	FiTwitter,
-	FiLinkedin,
-	FiGlobe,
-	FiYoutube,
 } from 'react-icons/fi';
 import profileImage from '../../images/profile.jpeg';
 
@@ -13,23 +9,14 @@ const socialLinks = [
 		icon: <FiGithub />,
 		url: "https://github.com/Everfade",
 	},
-	{
-		id: 3,
-		icon: <FiTwitter />,
-		url: 'https://twitter.com/realstoman',
-	},
-	{
-		id: 4,
-		icon: <FiLinkedin />,
-		url: 'https://www.linkedin.com/in/realstoman',
-	},
+ 
 ];
 
 const AppFooter = () => {
 	return (
 		<div className="">
 			<div className="  mt-5  ">
-				<img src={profileImage} className=" w-48 mx-auto rounded-full mb-10" alt="" />
+				<img src={profileImage} className="object-cover h-64 w-40 mx-auto rounded-full mb-10 overflow-hidden" alt="" />
 				{/* Footer social links */}
 				<div className="font-general-regular flex flex-col justify-center items-center ">
 					<ul className="flex gap-4 sm:gap-8">

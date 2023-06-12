@@ -2,63 +2,72 @@
 import { useContext } from 'react';
 import AboutMeContext from '../../context/AboutMeContext';
 import AppFooter from '../shared/AppFooter';
-
+import Button from '../reusable/Button';
 const AboutMeBio = () => {
 	const { skills } = useContext(AboutMeContext);
 	const { education } = useContext(AboutMeContext);
 	const { experience } = useContext(AboutMeContext);
 
 	return (
-		<div className="block sm:flex sm:gap-10 mt-10 sm:mt-20   ">
+		<div>
+		<div className="block sm:flex md:flex sm:gap-10 mt-10 sm:mt-20    ">
 			<div className="mb-7 sm:mb-0">
 				<AppFooter />
 			</div>
-			<div>
-				<h3 className="font-general-bold text-xl mb-4 text-ternary-dark dark:text-ternary-light">
+			<div className=' bg-secondary-dark rounded-lg mb-2'>
+				<h3 className="font-general-bold text-2xl mb-4 ml-2 mt-2 text-ternary-dark dark:text-ternary-light text-center">
 					Education
 				</h3>
+				<hr class="w-auto h-1 mx-auto my-4 bg-primary-dark border-0 rounded md:my-4 dark:bg-gray-700"></hr>
 				{education.map((el) => (
-					<div className="card">
-						<h2 className="date">{el.date}</h2>
-						<h3 className="position">{el.place}</h3>
+					<div className="card mb-4 ml-4 mr-4 text-ternary-dark dark:text-ternary-light text-lg  ">
+						<span  className="date italic font-general-bold text-md ">{el.date}</span >
+						<h3 className="position font-general text-lg">{el.place}</h3>
 						<p className="description">{el.description}</p>
 
 					</div>
 				))}
 			</div>
-			<div>
-				<h3 className="font-general-bold text-xl mb-4 text-ternary-dark dark:text-ternary-light">
-					Professional Experience
+			<div className=' bg-secondary-dark rounded-lg mb-2'>
+				<h3 className="font-general-bold text-2xl  ml-2 mt-2 text-ternary-dark dark:text-ternary-light text-center">
+					Work Experience
+					
 				</h3>
+				<hr class="w-auto h-1 mx-auto my-4 mb-4 bg-primary-dark border-0 rounded md:my-4 dark:bg-gray-700"></hr>
 				{experience.map((el) => (
-					<div className="card">
-						<div
-							className="mb-4 text-ternary-dark dark:text-ternary-light text-lg"
-							key={el.id}
-						>
-							{el.date} <p><span className="font-general-italic">{el.title}</span>, {el.company}, {el.location}</p>
+					<div className="card mt-2 ml-4 mr-4"  >
+						<div className="card mb-4 ml-4 mr-4 text-ternary-dark dark:text-ternary-light text-lg" key={el.id}>
+							<span className=' date italic font-general-bold text-md'>{el.date} </span>
+							<p>
+								<span className="  font-general text-lg ">{el.title}</span></p>
 						</div>
 					</div>
 				))}
 			</div>
-			<div >
-				<h3 className="font-general-bold text-xl mb-4 text-ternary-dark dark:text-ternary-light">
+	
+			</div>
+			<div className=' bg-secondary-dark rounded-lg mb-2'>
+				<h3 className="font-general-bold text-2xl  ml-2 mt-2 mr-2 text-ternary-dark dark:text-ternary-light text-center">
 					Skills
 				</h3>
-				<div className="card">
-					{skills.map((el) => (
-						<ul>
-							<li
-								className="mb-4 text-ternary-dark dark:text-ternary-light text-lg"
-								key={el.id}
-							>
-								{el.skill}
-							</li>
-
-						</ul>
-					))}
-				</div>
+				<hr class="w-auto h-1 mx-auto my-2 bg-primary-dark border-0 rounded md:my-4 dark:bg-gray-700 mb-4"></hr>
+				{skills.map((el) => (
+					<div className="card mb-2 ml-4 mr-4 text-ternary-dark dark:text-ternary-light text-lg"  >
+						<div
+							className="mb-2 text-ternary-dark dark:text-ternary-light text-lg"
+							key={el.id}
+						>
+							{el.skill} <p><span className="font-general-italic ">{el.title}</span></p>
+						</div>
+					</div>
+				))}
 			</div>
+			<div className="   
+      font-general-medium button   px-1 py-3 rounded-lg shadow-lg hover:shadow-xl text-center
+       bg-indigo-500 hover:bg-indigo-600 focus:ring-1 focus:ring-indigo-900 text-white
+        text-lg sm:text-xl duration-30 max-w-sm mx-auto mt-4  cursor-pointer">
+    <Button  title="Download CV" />
+    </div>
 		</div>
 	);
 };

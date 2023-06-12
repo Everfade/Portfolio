@@ -15,27 +15,23 @@ const ArticleSingle = ({ title, abstract, cover }) => {
 			}}
 		>  <Link to={`/articles/${encodeURIComponent(url_title)}`}>
 		 
-				<div    className="rounded-xl shadow-lg hover:shadow-xl cursor-pointer
+		 <div className="rounded-xl shadow-lg hover:shadow-xl cursor-pointer
 				 mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark ">
-						<div className="text-center px-2 py-2">
+					<div className="">
+						<img
+							src={cover}
+							className="object-cover w-80 h-80  rounded-t-s overflow-hidden border-none mx-auto py-5 hover:scale-105  ease-in duration-500  "
+							alt="Single Project"
+						/>
+					</div>
+					<div  className="rounded-xl shadow-lg hover:shadow-xl cursor-pointer
+				 mb-10 sm:mb-0   bg-custom-c">
+					<div className="text-center px-4 py-5">
 						<p className="font-general-medium text-lg md:text-xl text-ternary-dark dark:text-ternary-light mb-2">
 							{title}
 						</p>
-				 
+					 
 					</div>
-					<div className="  ">
-						<img
-							src={cover}
-							className="   rounded-lg  mx-auto"
-							alt="Single Article"
-						/>
-					</div>
-				
-					<div className="text-center px-2 py-2">
-						<p className="font-general-medium text-lg md:text-xl text-ternary-dark dark:text-ternary-light mb-2">
-							 
-						</p>
-				 
 					</div>
 				</div>
 				

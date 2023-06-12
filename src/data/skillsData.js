@@ -1,34 +1,54 @@
 export const skillsData = [
 {
     id: 1,
-    skill: 'JavaScript',
+    skill: 'Python',
 },
 {
     id: 2,
-    skill: 'React',
+    skill: 'Java',
 },
 {
     id: 3,
-    skill: 'Node.js',
+    skill: 'Sql',
 },
 {
     id: 4,
-    skill: 'Express',
+    skill: 'C#',
 },
 {
     id: 5,
-    skill: 'MongoDB',
+    skill: 'C',
+},
+
+{
+    id: 5,
+    skill: 'Haskell',
 },
 {
     id: 6,
-    skill: 'HTML',
+    skill: 'Typescript',
 },
 {
     id: 7,
-    skill: 'German',
+    skill: 'Machine Learning',
 },
 {
     id: 8,
-    skill: 'CSS',
+    skill: 'Linux',
+},
+{
+    id: 9,
+    skill: 'React',
+},
+{
+    id: 10,
+    skill: 'Unity',
+},
+{
+    id: 11,
+    skill: 'Office',
+},{
+    id: 10,
+    skill: '...',
 },
 ];

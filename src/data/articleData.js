@@ -1,6 +1,6 @@
-import Image1 from '../images/ai.png';
+import Image1 from '../images/rand.jpg';
 import Image2 from '../images/ai2.png';
-import Image3 from '../images/blockchain.png';
+import Image3 from '../images/prime.jpg';
 export const articleData = [
     {
       id: 1,
@@ -15,24 +15,24 @@ export const articleData = [
     },
     {
       id: 2,
-      title: "On Free Will And Bell’s Theorem Misconceptions",
+      title: "On  Bell’s Theorem & Free Will Misconceptions",
       cover: Image2,
       authors: ["Daniel A. Nissan"],
       publication: "",
       year: 2023,
       abstract:"In this paper, I argue why free will while being an intuitive notion, does not withstand scientific scrutiny. Furthermore, I give a brief history of the inception of Bell-type inequalities and we try to disentangle the connection between the concept of free will and the assumptions underlying Bell’s theorem which are often taken as one and the same. I list notable criticisms of Bell’s underlying assumptions and discuss successful experiments and their interpretations. Finally, I examine the implications of the violations of statistical independence in the class of super-deterministic theories and what that would mean for free will in a deterministic setting"
       ,
-      keywords: ["climate change", "biodiversity", "ecosystems", "global warming", "environment"],
+      keywords: ["Bell's Theorem", "Quantum Physics", "Free Will", "Super-Determinism"],
     },
     {
       id: 3,
-      title: "Exploring the Role of Blockchain in Supply Chain Management",
+      title: "Die Verteilung der Primzahlen und ihr Zusammenhang mit der Riemannschen Zetafunktion",
       cover: Image3,
-      authors: ["Michael Brown", "Jennifer Lee"],
+      authors: ["Daniel A. Nissan"],
       publication: "International Journal of Logistics",
-      year: 2023,
-      abstract: "This study examines the potential of blockchain technology in revolutionizing supply chain management. It investigates the benefits offered by blockchain, such as enhanced transparency, traceability, and security in supply chains. The paper explores real-world use cases and discusses challenges in implementing blockchain-based solutions. By analyzing the current landscape and future prospects, this research provides valuable insights into the role of blockchain in transforming supply chain operations.",
-      keywords: ["blockchain", "supply chain management", "transparency", "traceability", "security"],
+      year: 2018,
+      abstract:  "Diese vorwissenschaftliche Arbeit widmet sich den Primzahlen, insbesondere ihrer Verteilung. Die Aufgabe vorherzusagen, wo die nächste Primzahl aufzufinden ist, sollte keineswegs unterschätzt werden. Versucht man sich an folgender Frage: Welche Primzahl folgt nach 139? So kann man ohne großen Aufwand und mit Sicherheit sagen, dass es sich um 149 handelt. Das Ganze ändert sich jedoch, wenn von Zahlen mit 10.000.000 Stellen oder mehr die Rede ist. Irgendwann stoßen unsere jetzigen Computer an ihre Grenzen. Dieses Prinzip nutzt auch zum Beispiel die RSA-Verschlüsselung: Der Aufwand zwei Primzahlen zu multiplizieren, ist viel geringer als der, in deren Produkt einen Primfaktor zu finden. Dadurch rechtfertigt sich die Suche nach solch gigantischen Primzahlen. Es stellt sich heraus, dass es durchaus effizientere Methoden, geprägt von hoch zahlentheoretischem Charakter, gibt. Eine davon, nämlich die Riemannsche-Primzahlenfunktion, soll den Höhepunkt dieser Arbeit bilden. Es werden des Weiteren grundlegende Eigenschaften der Primzahlen präsentiert, welche das Fundament für das Verständnis der Problemstellung schaffen. Darauf folgen eine kurze geschichtliche Abhandlung und die Zeta-Funktion, einhergehend mit immer wiederkehrenden visuellen Unterstützungen in Form von Graphen. Schließlich mündet diese vorwissenschaftliche Arbeit in dem Endergebnis von Riemanns bedeutendstem Beitrag zur Zahlentheorie und ihren wichtigsten Erkenntnissen.",
+      keywords: ["Prime Numbers", "VWA", "Rieman Zeta function", "Harmonic Analysis"],
     },
   ];
   

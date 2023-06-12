@@ -8,7 +8,8 @@ import Button from '../reusable/Button';
 import ProjectRelatedProjects from './ProjectRelatedProjects';
 import ProjectSingleHeader from './ProjectHeader';
 import { motion } from 'framer-motion';
- 
+import { useNavigate } from "react-router-dom";
+
 function convertToCamelCase(str) {
 	const words = str.split('-');
 	const camelCaseWords = words.map((word, index) => {
@@ -24,10 +25,15 @@ function convertToCamelCase(str) {
 	return camelCaseString;
   }
 const ProjectDetails = () => {
+	function navigateToGit(url) {
+		console.log(url)
+		window.location.assign(url);
+	  }
+	const navigate = useNavigate();
 	let { title } = useParams();
 	 
 	const import_title=convertToCamelCase(title)
-	console.log(import_title)
+
 	const singleProjectData =   require("../../data/projects/"+import_title).singleProjectData;
  
 	//const project = singleProjectData.find(project => project.ProjectHeader.title.toLowerCase() === title);
@@ -52,7 +58,7 @@ const ProjectDetails = () => {
 		<Carousel  width={"30rem"}  showArrows={true} onChange={onChange} onClickItem={onClickItem} onClickThumb={onClickThumb}>
 	 
 			{singleProjectData.ProjectImages.map((project) => {
-				console.log(project.img)
+				 
 				return (
 					<div className=" mb-10 sm:mb-0" key={project.id}>
 						<img 
@@ -96,12 +102,13 @@ const ProjectDetails = () => {
 			</div>
 	
 		   </div>
-		   		<div className="   
-				   font-general-medium button   px-1 py-3 rounded-lg shadow-lg hover:shadow-xl
-					bg-indigo-500 hover:bg-indigo-600 focus:ring-1 focus:ring-indigo-900 text-white
-					 text-lg sm:text-xl duration-30 max-w-sm mx-auto  cursor-pointer text-center">
-				 <Button  title="Checkout Github" />
-				 </div>
+		
+		   {singleProjectData.ProjectInfo.gitUrl !== 'None' &&   <div onClick={()=>navigateToGit(singleProjectData.ProjectInfo.gitUrl)}
+		    className="font-general-medium button px-1 py-3 mb-4 rounded-lg shadow-lg hover:shadow-xl bg-indigo-500 hover:bg-indigo-600 focus:ring-1 focus:ring-indigo-900 text-white text-lg sm:text-xl duration-30 max-w-sm mx-auto cursor-pointer text-center">
+ 
+    <button>Checkout Github</button>
+ 
+</div>}
 				 
 				 
 				 </div> 	</motion.div>);
