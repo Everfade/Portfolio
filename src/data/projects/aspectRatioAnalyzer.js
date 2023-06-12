@@ -2,9 +2,14 @@
 import Image1 from '../../images/ratiolog.jpg';
 import Image2 from '../../images/ratio1s-transformed.jpeg';
 import Image3 from '../../images/ratio3s-transformed.jpeg';
-import Image4 from '../../images/mobile-project-1.jpg';
-import Image5 from '../../images/web-project-1.jpg';
-import Image6 from '../../images/ui-project-2.jpg';
+ 
+ 
+ 
+import Art2 from '../../images/art2.png';
+import gol from '../../images/gol.png';
+import dit from '../../images/dit.png';
+import UIImage1 from '../../images/ui-project-1.jpg';
+import UIImage2 from '../../images/ui-project-2.jpg';
  
 export const singleProjectData = {
 	ProjectHeader: {
@@ -64,27 +69,42 @@ export const singleProjectData = {
 		 
 	},
 	RelatedProject: {
-		title: 'Related Projects',
+		title: 'Other Projects',
 		Projects: [
 			{
 				id: 1,
-				title: 'Mobile UI',
-				img: Image4,
-			},
-			{
-				id: 2,
-				title: 'Web Application',
-				img: Image5,
+				title: 'Game of Life',
+				category: 'C#',
+				img: gol,
+				ProjectHeader: {
+					title: 'Project Management UI - From Context',
+					publishDate: 'Jul 26, 2021',
+					tags: 'UI / Frontend',
+				},
 			},
 			{
 				id: 3,
-				title: 'UI Design',
-				img: Image6,
+				title: 'Company Project Management Software',
+				category: 'ASP.NET',
+				img: UIImage1,
 			},
 			{
 				id: 4,
-				title: 'Kabul Mobile App UI',
-				img: Image3,
+				title: 'Sudoku Solver',
+				category: 'C#',
+				img: UIImage2,
+			},
+			{
+				id: 5,
+				title: 'Art Comission Website',
+				category: 'Java, Typescript',
+				img: Art2,
+			},
+			{
+				id: 6,
+				title: 'Diterpene Classification',
+				category: 'Python',
+				img: dit,
 			},
 		],
 	},

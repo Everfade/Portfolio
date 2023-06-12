@@ -4,17 +4,17 @@ import { articleData } from '../../data/articleData';
 import Button from '../reusable/Button';
 import { motion } from 'framer-motion';
 import Pdf1 from "./paperPdfs/die-verteilung-der-primzahlen-und-ihr-zusammenhang-mit-der-riemannschen-zetafunktion.pdf";
-import { useRef } from 'react';
+ 
 import Pdf2 from "./paperPdfs/effects-of-image-resolution-on-accuracy-and-robustness-in-cnns-and-smoothed-classifiers.pdf";
 import Pdf3 from "./paperPdfs/on-free-will-and-bell’s-theorem-misconceptions.pdf";
 
 
 
 
-// Create new plugin instance
+ 
  
 const ArticleDetails = ( ) => {
-    const anchorRef = useRef(null);
+   
 
   const downloadPDF = () => {
     window.open(Pdf);

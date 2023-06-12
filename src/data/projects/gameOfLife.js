@@ -1,13 +1,11 @@
 // Import images
 import Image1 from '../../images/gol.png';
-import Image2 from '../../images/ratio2.jpg';
-import Image3 from '../../images/ratio3.jpg';
-import Image4 from '../../images/mobile-project-1.jpg';
-import Image5 from '../../images/web-project-1.jpg';
-import Image6 from '../../images/ui-project-2.jpg';
  
-// Import icons
- 
+import RatioImage from '../../images/ratiolog.jpg';
+import Art2 from '../../images/art2.png';
+import dit from '../../images/dit.png';
+import UIImage1 from '../../images/ui-project-1.jpg';
+import UIImage2 from '../../images/ui-project-2.jpg';
 
 export const singleProjectData = {
 	ProjectHeader: {
@@ -55,27 +53,37 @@ export const singleProjectData = {
 		 
 	},
 	RelatedProject: {
-		title: 'Related Projects',
+		title: 'Other Projects',
 		Projects: [
 			{
-				id: 1,
-				title: 'Mobile UI',
-				img: Image4,
-			},
-			{
 				id: 2,
-				title: 'Web Application',
-				img: Image5,
+				title: 'Aspect Ratio Analyzer',
+				category: 'Kotlin',
+				img: RatioImage
 			},
 			{
 				id: 3,
-				title: 'UI Design',
-				img: Image6,
+				title: 'Company Project Management Software',
+				category: 'ASP.NET',
+				img: UIImage1,
 			},
 			{
 				id: 4,
-				title: 'Kabul Mobile App UI',
-				img: Image3,
+				title: 'Sudoku Solver',
+				category: 'C#',
+				img: UIImage2,
+			},
+			{
+				id: 5,
+				title: 'Art Comission Website',
+				category: 'Java, Typescript',
+				img: Art2,
+			},
+			{
+				id: 6,
+				title: 'Diterpene Classification',
+				category: 'Python',
+				img: dit,
 			},
 		],
 	},

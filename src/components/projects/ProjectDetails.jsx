@@ -4,7 +4,6 @@ import SingleProjectContext from '../../context/SingleProjectContext';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { useParams } from 'react-router-dom';
 import { Carousel } from 'react-responsive-carousel';
-import Button from '../reusable/Button';
 import ProjectRelatedProjects from './ProjectRelatedProjects';
 import ProjectSingleHeader from './ProjectHeader';
 import { motion } from 'framer-motion';
@@ -110,7 +109,7 @@ const ProjectDetails = () => {
  
 </div>}
 				 
-				 
+				 <ProjectRelatedProjects parentToChild={singleProjectData}></ProjectRelatedProjects>
 				 </div> 	</motion.div>);
 };
 

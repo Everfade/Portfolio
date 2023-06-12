@@ -1,10 +1,9 @@
 // Import images
-import WebImage1 from '../images/web-project-1.jpg';
-import WebImage2 from '../images/web-project-2.jpg';
+ 
 import RatioImage from '../images/ratiolog.jpg';
-import Art1 from '../images/art1.png';
+ 
 import Art2 from '../images/art2.png';
-import Art3 from '../images/art3.png';
+ 
 import gol from '../images/gol.png';
 import dit from '../images/dit.png';
 import UIImage1 from '../images/ui-project-1.jpg';

@@ -1,19 +1,16 @@
 import { useContext } from 'react';
-import { FiSearch } from 'react-icons/fi';
 import ArticleSingle from './ArticleSingle';
 import { ArticlesContext } from '../../context/ArticlesContext';
-import ArticlesFilter from '../../components/articles/ArticlesFilter'
+
 
  const ArticleGrid = () => {
 	const {
 		articles,
 			 
 				searchArticle,
-				setSearchArticle,
 				searchArticlesByTitle,
 				selectArticlesByCategory,
 				selectArticle,
-				setSelectArticle,   
 	} = useContext(ArticlesContext);
 
 	return (
@@ -39,17 +36,9 @@ import ArticlesFilter from '../../components/articles/ArticlesFilter'
 				</h3>
 				<div
 					className="
-                        flex
-                        justify-between
+                        flex justify-between
                         border-b border-primary-light
-                        dark:border-secondary-dark
-                        pb-3
-                        gap-3
-                        "
-				>
-			 
-
-				 
+                        dark:border-secondary-dark pb-3 gap-3">	 
 				</div>
 			</div>
 

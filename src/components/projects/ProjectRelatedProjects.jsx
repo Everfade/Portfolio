@@ -1,8 +1,7 @@
-import { useContext } from 'react';
-import SingleProjectContext from '../../context/SingleProjectContext';
+ 
 
-const ProjectRelatedProjects = () => {
-	const { singleProjectData } = useContext(SingleProjectContext);
+const ProjectRelatedProjects = ({parentToChild}) => {
+	const  singleProjectData  = parentToChild
 
 	return (
 		<div className="mt-10 pt-10 sm:pt-14 sm:mt-20 border-t-2 border-primary-light dark:border-secondary-dark">
@@ -15,7 +14,7 @@ const ProjectRelatedProjects = () => {
 					return (
 						<img
 							src={project.img}
-							className="rounded-xl cursor-pointer"
+							className="object-cover w-64 h-64 rounded-xl cursor-pointer"
 							alt={project.title}
 							key={project.id}
 						/>

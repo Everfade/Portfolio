@@ -1,7 +1,7 @@
 
 import { useContext } from 'react';
 import AboutMeContext from '../../context/AboutMeContext';
-import AppFooter from '../shared/AppFooter';
+import AppFooter from '../shared/ProfileDisplay';
 import Button from '../reusable/Button';
 const AboutMeBio = () => {
 	const { skills } = useContext(AboutMeContext);

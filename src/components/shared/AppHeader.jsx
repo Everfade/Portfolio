@@ -7,7 +7,7 @@ import '../../styles.css';
 const AppHeader = () => {
 	localStorage.setItem('theme', 'dark');
 	const [showMenu, setShowMenu] = useState(false);
-	const [activeTheme, setTheme] = useThemeSwitcher();
+	 
 	function toggleMenu() {
 		if (!showMenu) {
 			setShowMenu(true);
