@@ -5,7 +5,7 @@ function AppFooterCopyright() {
 				&copy; {new Date().getFullYear()}
 				<a
 					href="https://github.com/Everfade"
-					target="__blank"
+					target="__blank"  rel="noreferrer"
 					className="hover:underline hover:text-indigo-600 dark:hover:text-indigo-300 ml-1 duration-500"
 				>
 					 
@@ -13,7 +13,7 @@ function AppFooterCopyright() {
 				D. A.
 				<a
 					href="https://stoman.me"
-					target="__blank"
+					target="__blank"  rel="noreferrer"
 					className="text-secondary-dark dark:text-secondary-light font-medium uppercase hover:underline hover:text-indigo-600 dark:hover:text-indigo-300 ml-1 duration-500"
 				>
 					Nissan

@@ -23,7 +23,7 @@ const AppFooter = () => {
 						{socialLinks.map((link) => (
 							<a
 								href={link.url}
-								target="__blank"
+								target="__blank"  rel="noreferrer"
 								key={link.id}
 								className="text-gray-400 hover:text-indigo-500 dark:hover:text-indigo-400 cursor-pointer rounded-lg bg-gray-50 dark:bg-ternary-dark hover:bg-gray-100 shadow-sm p-2 duration-300"
 							>
