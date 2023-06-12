@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { FiMenu, FiMoon, FiSun, FiX } from 'react-icons/fi';
+import { FiMenu, FiX } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import useThemeSwitcher from '../../hooks/useThemeSwitcher';
 import { motion } from 'framer-motion';
@@ -7,7 +7,7 @@ import '../../styles.css';
 const AppHeader = () => {
 	localStorage.setItem('theme', 'dark');
 	const [showMenu, setShowMenu] = useState(false);
-	 
+	useThemeSwitcher();
 	function toggleMenu() {
 		if (!showMenu) {
 			setShowMenu(true);
