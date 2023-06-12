@@ -83,19 +83,22 @@ const ArticleDetails = ( ) => {
         <div className=" text-center mb-4">
             <img className="rounded-lg w-72  mx-auto"  src={article.cover} alt="Article Cover"/>
         </div>
-
+        <div className="border-b border-primary-light
+                        dark:border-secondary-dark pb-3 gap-3  mb-2 "></div>
         <div className="mb-7 flex flex-col items-center justify-center ">
             <div>   <p className="font-general-regular text-4xl
               text-ternary-dark dark:text-ternary-light mb-2">Abstract</p></div>
+            
           
          
-             <div  className="w-full sm:w-2/3  mt-10 sm:mt-1  ">
+             <div  className="w-full sm:w-2/3  mt-10 sm:mt-1   ">
 			 		<p className="font-general-regular mb-5 text-lg t text-ternary-dark dark:text-ternary-light">
 							{article.abstract}
 						</p>
 			</div>
         </div>
-    
+      
+   
         <div className="mb-4">
 				<p className="font-general-regular text-primary-dark
          dark:text-primary-light text-2xl font-bold mb-5">
