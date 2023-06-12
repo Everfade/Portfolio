@@ -1,6 +1,4 @@
-import { useContext } from 'react';
 import React from 'react';
-import SingleProjectContext from '../../context/SingleProjectContext';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { useParams } from 'react-router-dom';
 import { Carousel } from 'react-responsive-carousel';
@@ -28,7 +26,7 @@ const ProjectDetails = () => {
 		console.log(url)
 		window.location.assign(url);
 	  }
-	const navigate = useNavigate();
+	 useNavigate();
 	let { title } = useParams();
 	 
 	const import_title=convertToCamelCase(title)
