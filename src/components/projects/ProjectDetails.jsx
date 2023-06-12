@@ -3,7 +3,7 @@ import React from 'react';
 import SingleProjectContext from '../../context/SingleProjectContext';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { useParams } from 'react-router-dom';
-import { Carousel,onChange,onClickItem,onClickThumb } from 'react-responsive-carousel';
+import { Carousel } from 'react-responsive-carousel';
 import Button from '../reusable/Button';
 import ProjectRelatedProjects from './ProjectRelatedProjects';
 import ProjectSingleHeader from './ProjectHeader';
@@ -55,7 +55,7 @@ const ProjectDetails = () => {
 			<ProjectSingleHeader parentToChild={singleProjectData}></ProjectSingleHeader>	
 		<div className='flex flex-auto mt-10'>
 		<div className='max-w-md mr-14 ml-10 h-fit'>
-		<Carousel  width={"30rem"}  showArrows={true} onChange={onChange} onClickItem={onClickItem} onClickThumb={onClickThumb}>
+		<Carousel  width={"30rem"}  showArrows={true}  >
 	 
 			{singleProjectData.ProjectImages.map((project) => {
 				 
