@@ -24,4 +24,4 @@ yarn-error.log*
 .vscode
 yarn.lock
 
-/src/data
+
