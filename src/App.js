@@ -20,7 +20,7 @@ function App() {
 	return (
 		<AnimatePresence>
 			<div className=" bg-secondary-dark dark:bg-primary-dark transition duration-300">
-				<Router>
+				<Router basename="web-portfolio">
 					<ScrollToTop />
 					<AppHeader />
 					<Suspense fallback={""}>
