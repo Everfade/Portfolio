@@ -1,5 +1,5 @@
 {
-	"homepage":"http://everfade.gitub.io//Portfolio",
+	"homepage": "http://Everfade.gitub.io/Portfolio",
 	"name": "react-tailwindcss-portfolio",
 	"version": "0.1.0",
 	"private": true,
@@ -28,7 +28,7 @@
 	},
 	"scripts": {
 		"predeploy": "npm run build",
-	    "deploy": "gh-pages -d build",
+		"deploy": "gh-pages -d build",
 		"start": "react-scripts --openssl-legacy-provider start",
 		"build": "yarn run react-scripts build",
 		"test": "react-scripts test",

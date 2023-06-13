@@ -20,7 +20,7 @@ function App() {
 	return (
 		<AnimatePresence>
 			<div className=" bg-secondary-dark dark:bg-primary-dark transition duration-300">
-				<Router   >
+			
 					<ScrollToTop />
 					<AppHeader />
 					<Suspense fallback={""}>
@@ -36,7 +36,7 @@ function App() {
 							<Route path="contact" element={<Contact />} />
 						</Routes>
 					</Suspense>
-				</Router>
+			
 				 
 				<UseScrollToTop />
 			</div>
